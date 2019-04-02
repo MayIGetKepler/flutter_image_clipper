@@ -17,7 +17,7 @@ class ImageClipper extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     Paint paint = Paint();
-    canvas.drawImageRect(_image, Rect.fromLTRB(_image.width*0.35, _image.height*0.35, _image.width*0.6, _image.height*0.6), 
+    canvas.drawImageRect(_image, Rect.fromLTRB(_image.width*left, _image.height*top, _image.width*right, _image.height*bottom), 
     Rect.fromLTWH(0, 0, size.width,  size.height), paint);
   }
 
